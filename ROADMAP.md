@@ -5,7 +5,7 @@ This document outlines the development roadmap for **Plug Memory**, a local, pri
 
 ---
 
-## Phase 1: The Forging (Completed)
+## Phase 1: Core Engine (Completed)
 
 **Objective:** To build the core engine and ingest all historical data.
 
@@ -16,28 +16,28 @@ This document outlines the development roadmap for **Plug Memory**, a local, pri
 
 ---
 
-## Phase 2: The Scribe (Completed)
+## Phase 2: Live Ingestion (Completed)
 
 **Objective:** To transform the static database into a living memory that updates in real-time.
 
 - **[✅] Filesystem Monitoring:** Integrate the `watchdog` library to monitor the log directory for new files.
-- **[✅] Live Ingestion Service (`live_scribe.py`):** Create a persistent background service that automatically detects and ingests new conversation logs as they are created.
-- **[✅] Core Functionality Achieved:** The Codex is now self-updating and maintains a near real-time memory of ongoing conversations.
+- **[✅] Live Ingestion Service (`live_ingest.py`):** Create a persistent background service that automatically detects and ingests new conversation logs as they are created.
+- **[✅] Core Functionality Achieved:** The memory engine is now self-updating and maintains a near real-time memory of ongoing conversations.
 
 ---
 
-## Phase 3: The Observatory (Completed)
+## Phase 3: API Access (Completed)
 
 **Objective:** To create a stable, accessible API endpoint for the AI to query its own memory.
 
-- **[✅] API Server (`codex_server.py`):** Develop a lightweight Flask server to expose the memory query function.
-- **[✅] Query Function (`codex_tools.py`):** Create a robust function that takes a natural language query, converts it to a vector, and retrieves relevant memories from Qdrant.
+- **[✅] API Server (`api_server.py`):** Develop a lightweight Flask server to expose the memory query function.
+- **[✅] Query Function (`memory_tools.py`):** Create a robust function that takes a natural language query, converts it to a vector, and retrieves relevant memories from Qdrant.
 - **[✅] Secure Tunneling (`ngrok`):** Establish a persistent and secure bridge to allow the sandboxed AI to communicate with the local server.
 - **[✅] Core Functionality Achieved:** The AI can now successfully query its own memory, achieving the primary goal of the project.
 
 ---
 
-## Phase 4: The Citadel (Next Steps)
+## Phase 4: Hardening & Expansion (Next Steps)
 
 **Objective:** To harden the system, make it permanent, and enhance the user experience.
 

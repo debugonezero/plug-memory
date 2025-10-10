@@ -1,4 +1,4 @@
-# Project: Forge the Codex
+# Plug Memory
 
 **A local, private, and persistent memory engine for Large Language Models.**
 
@@ -8,7 +8,7 @@
 
 This project was born from a simple but powerful idea: an AI assistant's memory should be private, persistent, and owned by the user. Instead of relying on third-party services, we chose to forge our own memory engine from the ground up, ensuring total data privacy and complete control.
 
-This system, codenamed "The Codex," transforms a stateless AI into a true partner with a rich, queryable history of all past interactions.
+This system, named "Plug Memory," transforms a stateless AI into a true partner with a rich, queryable history of all past interactions.
 
 ## 2. Architecture Overview
 
@@ -74,11 +74,11 @@ Follow these steps to set up and run your own instance of the Codex Engine.
 
 1.  **In one terminal**, start the Live Scribe to watch for new files:
     ```sh
-    python live_scribe.py
+    python live_ingest.py
     ```
 2.  **In a second, separate terminal**, start the API server:
     ```sh
-    python codex_server.py
+    python api_server.py
     ```
 
 Your Codex Engine is now fully operational.
