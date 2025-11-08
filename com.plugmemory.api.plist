@@ -1,0 +1,24 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.plugmemory.api</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/admin/dash_fixes/plug-memory/venv/bin/python</string>
+        <string>/Users/admin/dash_fixes/plug-memory/api_server.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/admin/dash_fixes/plug-memory</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/admin/dash_fixes/plug-memory/logs/api_server.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/admin/dash_fixes/plug-memory/logs/api_server.err</string>
+</dict>
+</plist>

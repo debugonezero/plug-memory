@@ -1,0 +1,79 @@
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Traceback (most recent call last):
+  File "/Users/admin/dash_fixes/codex_engine/api_server.py", line 2, in <module>
+  File "/Users/admin/dash_fixes/codex_engine/memory_tools.py", line 3, in <module>
+  File "/Users/admin/dash_fixes/codex_engine/venv/lib/python3.13/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+  File "/Users/admin/dash_fixes/codex_engine/venv/lib/python3.13/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+  File "/Users/admin/dash_fixes/codex_engine/venv/lib/python3.13/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+ModuleNotFoundError: No module named 'transformers.configuration_utils'
+/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-49585-h_2xcckw'}
+  warnings.warn(

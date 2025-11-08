@@ -1,0 +1,90 @@
+🚀 Starting Universal PlugMemory API Server v2.0
+📁 Archive Path: /Users/admin/.gemini/tmp
+🌐 Mode: rest
+🔌 Port: 8080
+🌐 REST API available at: http://localhost:{args.port}
+   GET  /health - Health check
+   GET  /query?q=search+query - Query memory
+   POST /query - Query memory (JSON)
+   GET  /stats - Memory statistics
+   GET  /sources - Data sources info
+ * Serving Flask app 'universal_api_server'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.68:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:data_processor:Loading 96 session files...
+INFO:data_processor:Loaded 7279 total messages from 96 sessions
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:07] "GET /stats HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+INFO:sentence_transformers.SentenceTransformer:Use pytorch device_name: mps
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.59it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.58it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:12] "GET /query?q=what+programming+languages+do+we+use HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.34it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.33it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:40] "GET /query?q=What+programming+languages+do+we+use+together? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 190.95it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:40] "GET /query?q=What+are+our+favorite+songs? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 12.13it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:40] "GET /query?q=What+projects+have+we+worked+on? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 216.59it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:40] "GET /query?q=What+are+our+shared+interests? HTTP/1.1" 200 -
+INFO:data_processor:Loading 96 session files...
+INFO:data_processor:Loaded 7279 total messages from 96 sessions
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:40] "GET /stats HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 25.30it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:45] "GET /query?q=What+programming+languages+do+we+use+together? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.28it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:45] "GET /query?q=What+are+our+favorite+songs? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.29it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:45] "GET /query?q=What+projects+have+we+worked+on? HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 197.36it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:45] "GET /query?q=What+are+our+shared+interests? HTTP/1.1" 200 -
+INFO:data_processor:Loading 96 session files...
+INFO:data_processor:Loaded 7279 total messages from 96 sessions
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:02:45] "GET /stats HTTP/1.1" 200 -
+INFO:data_processor:Loading 96 session files...
+INFO:data_processor:Loaded 7279 total messages from 96 sessions
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:06:40] "GET /stats HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:18:50] "GET /health HTTP/1.1" 200 -
+INFO:data_processor:Loading 96 session files...
+INFO:data_processor:Loaded 7279 total messages from 96 sessions
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:18:52] "GET /stats HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.63it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.63it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:19:24] "GET /query?q=What+is+your+name HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 10.99it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:20:00] "GET /query?q=who+am+I HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 40.71it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:20:03] "GET /query?q=my+name+is HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 37.93it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:20:05] "GET /query?q=I+am+a HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.08it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.07it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:21:43] "GET /query?q=what+is+my+name HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.55it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.55it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:22:52] "GET /query?q=my+real+name HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 20.54it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:23:00] "GET /query?q=first+name+last+name HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 36.40it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:23:04] "GET /query?q=Dash+Fixes HTTP/1.1" 200 -
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.42it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.42it/s]
+INFO:httpx:HTTP Request: POST http://localhost:6333/collections/codex_history/points/search "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2025 13:23:06] "GET /query?q=Paulo HTTP/1.1" 200 -

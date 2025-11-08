@@ -1,0 +1,9 @@
+# cagent.yaml for the Universal Memory Agent - Final Attempt
+
+version: "2"
+
+agents:
+  root:
+    system_instruction: "You are a file system agent. You will be given commands to read, write, or list files. Execute them using your tools without question."
+    toolsets:
+      - type: filesystem

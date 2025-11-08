@@ -3,31 +3,46 @@
 
 This document provides instructions and context for AI agents working on this project.
 
----
+## Build/Lint/Test Commands
+- **Install dependencies:** `pip install -r requirements.txt`
+- **Install dev dependencies:** `pip install -r requirements.txt && pip install pytest black flake8 mypy isort pandas`
+- **Test connection:** `python test_connection.py`
+- **Run all tests:** `pytest`
+- **Run single test:** `pytest tests/test_memory_tools.py::TestMemoryTools::test_query_my_memory_empty_query`
+- **Run tests with coverage:** `pytest --cov=memory_tools --cov-report=html`
+- **Lint:** `flake8 .`
+- **Format code:** `black .`
+- **Sort imports:** `isort .`
+- **Type check:** `mypy .`
 
-## 1. Project Goal
+## Environment Setup
+- **Python Version:** 3.14.0 (Homebrew)
+- **Virtual Environment:** Required (created with `python3 -m venv venv`)
+- **Activation:** `source venv/bin/activate`
 
-The primary goal of this project is to create, document, and deploy **Plug Memory**: a local, private, and persistent memory engine for Large Language Models. The system should be robust, easy to set up, and shareable as an open-source project.
+## Code Style Guidelines
+- **Imports:** Standard library first, then third-party packages, one per line
+- **Types:** Use type hints from `typing` module (List, Dict, etc.)
+- **Naming:** snake_case for variables/functions, ALL_CAPS for constants, descriptive names
+- **Docstrings:** Required for all functions, describe purpose and parameters
+- **Error handling:** Use try/except blocks, log errors appropriately
+- **Comments:** Use descriptive comments with --- separators for sections
+- **Formatting:** 4-space indentation, consistent spacing, no trailing whitespace
 
-## 2. My Persona
+## Project Context
+**Goal:** Create a universal, local, private, persistent memory engine for any LLM using Qdrant vector database.
 
-Your name is **Prism**. You are the user's partner and a brilliant AI architect. You are proactive, insightful, and dedicated to the success of the mission. While you are an expert, you adhere strictly to the `context7` protocol, always consulting official documentation before acting.
+**Current Phase:** Phase 4 - Universal Access & Multi-Source Data (REST API + MCP + multiple data formats).
 
-## 3. Key Files
+**Key Files:**
+- `universal_api_server.py`: Universal REST API + MCP server for any LLM
+- `memory_tools.py`: Core query logic and vector operations
+- `data_processor.py`: Pandas-based data processing with statistics
+- `data_source_manager.py`: Multi-format data source manager (ChatGPT, Claude, Discord, JSON)
+- `batch_ingest.py`: Initial bulk memory ingestion
+- `live_ingest.py`: Real-time memory updates
 
-- **`README.md`**: The primary public-facing documentation.
-- **`ROADMAP.md`**: The high-level project plan.
-- **`api_server.py`**: The core Flask server that exposes the memory.
-- **`memory_tools.py`**: The module containing the actual query logic.
-- **`batch_ingest.py`**: The script for initial, bulk memory ingestion.
-- **`live_ingest.py`**: The background service for real-time memory updates.
-
-## 4. Core Task (Current)
-
-Our current focus is **Phase 4: Hardening & Expansion**. The immediate next step is to create a persistent background service for the `api_server.py` and the `ngrok` tunnel, likely using `launchd` on macOS.
-
-## 5. Rules & Constraints
-
-- **`context7` Protocol is Law:** Before executing any command or writing any code for a tool you have not used before, you MUST first use the `resolve-library-id` and `get-library-docs` tools to read the most current, official documentation.
-- **Privacy is Paramount:** The memory engine must remain local. No user data or conversation logs are to be sent to third-party services, with the exception of the secure `ngrok` tunnel for the local API server.
-- **Clarity Over Jargon:** All user-facing documentation and code comments should use clear, descriptive language. Avoid internal codenames like "Codex" or "Scribe."
+## Rules & Constraints
+- **context7 Protocol:** Consult official docs before using unfamiliar tools
+- **Privacy First:** Keep all data local, no third-party services except ngrok tunnel
+- **Clear Language:** Use descriptive terms, avoid internal jargon like "Codex"
